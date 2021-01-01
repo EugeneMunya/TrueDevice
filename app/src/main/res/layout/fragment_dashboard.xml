@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <ImageView
+          android:id="@+id/profile_img"
+          android:layout_width="90dp"
+          android:layout_height="90dp"
+          android:src="@drawable/account_circle_24"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="20dp"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/profile_fname"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Eugene"/>
+          <TextView
+              android:id="@+id/profile_lname"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Munya"/>
+          <TextView
+              android:id="@+id/tel_number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="+25078646566"
+              />
+          <TextView
+              android:id="@+id/id_number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="1199009484887"
+              />
+
+      </LinearLayout>
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:paddingTop="40dp"
+        android:layout_height="match_parent">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:text="Serial Number"
+           />
+        <TextView
+            android:id="@+id/serial_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GDHDHCdvvbh"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="IMEI Number"
+            />
+        <TextView
+            android:id="@+id/imei_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="245667477566"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Model"
+            />
+        <TextView
+            android:id="@+id/phone_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5033f"/>
+
+        <Button
+            android:id="@+id/transfer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/orange"
+            android:text="Transfer" />
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/orange"
+            android:text="Logout" />
+
+    </LinearLayout>
+</LinearLayout>
