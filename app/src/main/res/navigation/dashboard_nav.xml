@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.example.truedevice.DashboardFragment"
+        android:name="com.example.truedevice.ui.dashboard.DashboardFragment"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_dashboard" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/confirmTransferFragment"
-        android:name="com.example.truedevice.ConfirmTransferFragment"
+        android:name="com.example.truedevice.ui.dashboard.ConfirmTransferFragment"
         android:label="fragment_confirm_transfer"
         tools:layout="@layout/fragment_confirm_transfer" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/transferDeviceFragment"
-        android:name="com.example.truedevice.TransferDeviceFragment"
+        android:name="com.example.truedevice.ui.dashboard.TransferDeviceFragment"
         android:label="fragment_transfer_device"
         tools:layout="@layout/fragment_transfer_device" >
         <action
@@ -43,12 +43,12 @@
     </fragment>
     <fragment
         android:id="@+id/successfulTransferFragment"
-        android:name="com.example.truedevice.SuccessfulTransferFragment"
+        android:name="com.example.truedevice.ui.dashboard.SuccessfulTransferFragment"
         android:label="fragment_successful_transfer"
         tools:layout="@layout/fragment_successful_transfer" />
     <fragment
         android:id="@+id/failTransferFragment"
-        android:name="com.example.truedevice.FailTransferFragment"
+        android:name="com.example.truedevice.ui.dashboard.FailTransferFragment"
         android:label="fragment_fail_transfer"
         tools:layout="@layout/fragment_fail_transfer" />
 </navigation>

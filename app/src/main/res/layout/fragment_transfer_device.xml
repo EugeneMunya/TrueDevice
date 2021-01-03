@@ -12,7 +12,7 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintLeft_toRightOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
-    android:layout_marginTop="200dp"
+    android:layout_marginTop="50dp"
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
     android:hint="Receiver ID Or Passport Number"
@@ -20,7 +20,7 @@
     <Button
         android:id="@+id/transfer_ok_btn"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -32,8 +32,8 @@
     <Button
         android:id="@+id/transfer_cancel_btn"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         app:layout_constraintTop_toBottomOf="@+id/transfer_ok_btn"

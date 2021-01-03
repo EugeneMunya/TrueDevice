@@ -30,7 +30,7 @@
         android:layout_marginLeft="20dp"
         android:inputType="textPassword"
         android:hint="Password"
-        />
+        android:autofillHints="" />
     <Button
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
