@@ -9,7 +9,8 @@ class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
-//        val dialog = RegisterDeviseDialog()
-//        dialog.show(supportFragmentManager,"register dialog")
+       val dialog = RegisterDeviseDialog(this)
+       dialog.show(supportFragmentManager,"register dialog")
+
     }
 }
