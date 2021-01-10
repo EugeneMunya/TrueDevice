@@ -31,24 +31,37 @@
         android:layout_marginLeft="20dp"
         android:hint="Last Name"
         />
-    <EditText
-        android:id="@+id/phoneNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/lastName"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="168dp"
+        android:layout_height="56dp"
         android:layout_marginLeft="20dp"
-        android:hint="Phone Number"
+        app:ccp_countryPreference="us,in"
+        app:ccp_defaultNameCode="rw"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/editText_carrierNumber"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <EditText
+        android:id="@+id/editText_carrierNumber"
+        android:layout_width="195dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:hint="phone"
+        android:inputType="phone"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ccp"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"
+
         />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editText_carrierNumber"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="10dp"
@@ -81,17 +94,19 @@
         android:layout_marginLeft="20dp"
         android:backgroundTint="@color/orange"
         />
+
     <TextView
         android:id="@+id/login_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login_link"
-        app:layout_constraintTop_toBottomOf="@+id/signup_btn"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"/>
+        android:text="@string/login_link"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
